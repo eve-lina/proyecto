@@ -1,0 +1,65 @@
+.footer-menu{
+    grid-row: 3 / 4;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    font-family: 'montserrat',sans-serif;
+    background-color:#a2a4a38e;
+    width: 100%;
+    box-sizing: border-box;
+
+
+    .mapa {
+        max-width: 360px;
+    }
+    &__item{
+        padding-left: 0%;
+    }
+    &__item:nth-child(2) {
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    &__sub-item{
+        list-style:none;
+        font-weight: 600;
+        @include laptop{ 
+        padding: 0 40px;
+        }
+ 
+    }
+    &__submenu{
+        list-style: none;
+        padding: 0;
+        font-weight: 200;
+
+    }
+    .contact{
+        padding-bottom: 5px;
+    }
+}
+
+.tablaredes {
+    display: flex;
+    li {
+        margin: 3px;
+        margin-left: 10px;
+        font-size: 50px;   
+     }
+    }
+
+        .link {
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 10px;
+
+    &visited,&active{
+        text-decoration: none;
+    }
+}
+

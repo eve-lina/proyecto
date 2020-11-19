@@ -1,0 +1,50 @@
+.header-a{
+    
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .info{
+        display: none;
+        @include laptop{
+            display: block;
+            text-align: center;
+            width: 100%;
+            background-color: #ED7B23;
+        }
+    }
+    .logo{
+        @include laptop{
+            transform: translateY(-30px) ;
+           margin-right: auto;
+           margin-left: 3em;
+        }
+    }
+    .search{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: black;
+        margin-left: -5%;
+        @include laptop{
+            width: 40%;
+            transform: translateY(-145px);
+        }
+        
+        .search__input{
+            width: 90%;
+            height: 30px;
+            border-radius: 2px;
+            border: 1px solid;
+
+            &:focus{
+                outline-style: none;
+            }
+        }
+
+        .search-icon{
+            cursor: pointer;
+            font-size: 25px;
+        }
+    }
+}   

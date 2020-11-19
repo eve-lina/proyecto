@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origen natural - Tu almacén online</title>
+    <meta name='description'content="Almacén Online de productos naturales, envíos a domicilio">
+    <link rel="icon" type="image/jpg" href="pic/logo.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44437af0d2.js" crossorigin="anonymous"></script>
+</head>
+<body class="body"></body>
+
+    <header class="header-a">
+        <div class="info">
+            <span class="info__span">Envíos normales durante todo el año</span>
+        </div>
+
+<!-- ---- ---- ---- Comienzo de Top-Bar ---- ---- ---- -->
+        
+        <div class="topbar">
+            
+            <div id="topbar__icon" class="topbar__icon">
+                <div class="icon-bars"></div>
+            </div>
+
+            <a href="#" class="topbar__user">
+                <span class="registrarse">Registrarse</span>
+                <i class="fas fa-user-circle icon-user"></i>
+            </a>
+            <a href="#" class="topbar__cart">
+                <i class="fas fa-cart-plus icon-cart"></i>
+            </a>
+        </div>
+<!-- ---- ---- ---- Fin de Top-Bar ---- ---- ---- -->
+
+<!-- ---- ---- ---- Comienzo de Main-Menú ---- ---- ---- --> 
+
+        <nav class="main-nav">
+            <ul class="main-menu" id="main-menu">
+                <li class="main-menu__item"><a href="store.html" class="main-menu__link">Almacen online</a></li>
+                <li class="main-menu__item"><a href="recetas.html" class="main-menu__link">Recetas</a></li>
+                <li class="main-menu__item"><a href="info-nutricional.html" class="main-menu__link">Información Nutricional</a></li>
+                <li class="main-menu__item"><a href="sobrenosotros.html" class="main-menu__link">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+<!-- ---- ---- ---- Comienzo de Main-Menu ---- ---- ---- -->
+
+<!-- ---- ---- ---- Comienzo de Banner ---- ---- ---- -->
+
+        <a href="index.html" class="logo">
+            <img src="logo.jpg" alt="">
+        </a>
+        <div class="search">
+            <input class="search__input" type="search" name="buscar" placeholder="buscar">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        
+     </header> 
+<!-- ---- ---- ---- Fin de Banner ---- ---- ---- -->
+
+
+<!-- ---- ---- ---- Comienzo de Main ---- ---- ---- -->
+
+     <main class="main-index">
+        <h1 class="h1-home">La tienda online donde encontrás todos tus productos orgánicos y naturales
+        </h1>
+
+
+<!-- ---- ---- ---- Comienzo de Recomendados ---- ---- ---- -->      
+
+        <section class="rec">
+            <div class="rec__prod imagen1">    
+                <a class="rec__a" href="store.html#alimentos">   
+                    <h2 class="rec__h2">Alimentos</h2>    
+                </a>
+            </div>
+            <div class="rec__prod imagen2">
+                <a class="rec__a" href="store.html#cuidado-personal">
+                    <h2 class="rec__h2">Cuidado personal</h2>
+                </a>
+            </div>
+        </section>
+        <section class='main-index__faq'>
+            <div class= 'main-index__faq-div'>
+            <h2 class= 'main-index__faq-h2'>Preguntas frecuentes</h2>
+            <h3 class= 'main-index__pregunta'>¿Hacen envíos? ¿En qué zonas?</h3>
+            <p class= 'main-index__respuesta'>Si! Hacemos pedidos en todo CABA por un costo fijo de $250, la distribución es por días según el cronograma que figura dentro de la tienda.</p>
+            <h3 class= 'main-index__pregunta'>¿Puedo retirar mi pedido en la tienda?</h3>
+            <p class= 'main-index__respuesta'>Si! en 24 horas tu pedido está listo para ser retirado y te notificaremos por mail.</p>
+            <h3 class= 'main-index__pregunta'>¿Cómo son los horarios de atención al público?</h3>
+            <p class= 'main-index__respuesta'>Actualmente atendemos al público en un horario reducido de 9 a 15 hs debido a las medidas de distanciamiento social para asegurar la seguridad de nuestro personal y nuestros clientes.</p>
+            <h3 class= 'main-index__pregunta'>¿Todos sus productos son naturales?</h3>
+            <p class= 'main-index__respuesta'>Nuestros productos están cuidadosamente seleccionados para cubrir las necesidades o preferencias alimenticias de la mayor cantidad de clientes posible: Quienes deseen una alimentación vegana, real food, raw como así también quienes necesiten productos son glúten, lácteos, huevos, etc. Buscamos lograr el delicado equilibro entre brindarles una gran variedad de opciones con el menor nivel de procesamiento y aditivos.</p>
+            </div>
+        </section>
+
+    <!-- ---- ---- ---- Comienzo de formulario contacto ---- ---- ---- --> 
+
+        <div class='main-index__div-form'>
+            <span class= main-index__titulo-form>
+                Contactanos
+            </span>
+            <form class= 'main-index__form' action="index.html" method="post" name="contacto" enctype="application/x-www-form-urlencoded">
+                <fieldset class= 'main-index__form-field'>
+                    <label for="name">Nombre</label>
+                    <input class= main-index__form-campo id="name" type="text" name="name" required="" placeholder="Nombre y apellido">
+                </fieldset>
+                 <fieldset class= 'main-index__form-field'>
+                    <label for="Email">Email</label>
+                    <input class= main-index__form-campo id="Email" class="form-control" type="email" name="Email" required="" placeholder="tumail@mail.com">
+                 </fieldset>
+                 <fieldset class= 'main-index__form-field'>
+                <label for="Teléfono">Teléfono</label>
+                <input class= main-index__form-campo id="Teléfono" type="text" name="Teléfono" placeholder="11 2222 3344">
+                </fieldset>
+                <fieldset class= 'main-index__form-field'>
+                    <label for="motivo">Motivo de consulta</label>
+                    <select class= main-index__form-campo id='motivo'name="motivos-consulta">
+                        <option value="Pedidos">Pedidos</option>
+                        <option value="Productos">Productos</option>
+                        <option value="Envíos">Envíos</option>
+                    </select>
+                </fieldset>
+                <fieldset class= 'main-index__form-field'>
+                    <legend>Comentario</legend>
+                    <textarea class= main-index__form-campo cols="30" rows="4" name="Comentario"id='text-comentario'>
+                    </textarea>
+                </fieldset>
+                <fieldset class= 'main-index__form-field main-index__enviar'>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </div>
+    <!-- ---- ---- ---- Fin de formulario ---- ---- ---- --> 
+
+    <!-- ---- ---- ---- Fin de Main ---- ---- ---- -->
+    </main>
+    <footer class='footer-menu'>
+        <div class='footer-menu__item'>
+            <iframe class='mapa' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.997395032095!2d-58.41223768513107!3d-34.60422738045942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8ce8e64c01%3A0x63644f80e12c9559!2sAv.%20Corrientes%203188%2C%20C1193AAQ%20CABA!5e0!3m2!1ses-419!2sar!4v1605320944422!5m2!1ses-419!2sar"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <ul class='footer-menu__item contact-ul'>    
+            <li class='footer-menu__sub-item'>Contactanos
+                <ul class='footer-menu__submenu'>
+                    <li class= 'contact'><a class= 'link' href="tel:+5491144446666">+549 11-4444-6666</a> </li>
+                    <li class= 'contact'><a class= 'link' href="tel:+541122446688">(11)2244-6688</a> </li>
+                    <li class= 'contact'><a class= 'link' href="mailto: info@origen-natural.com.ar">info@origen-natural.com.ar</a> </li>
+                    <li class= 'contact'><address><a class= 'link' href="https://goo.gl/maps/P1tcND3rSXnWGwsB6">Av. Cordoba 3188, CABA</a> </li></address>
+                </ul>
+            </li>
+            <li class='footer-menu__sub-item'>Redes sociales
+                <ul class='footer-menu__submenu tablaredes'>
+                    <li><a class= 'link' href="#">
+                        <i class="fab fa-facebook-square"></i></a> </li>
+                    <li><a class= 'link' href="#">
+                        <i class="fab fa-instagram-square"></i></a> </li>
+                    <li><a class= 'link' href="#"><i class="fab fa-twitter-square"></i></a> </li>
+                    <li><a class= 'link' href="#"><i class="fab fa-pinterest-square"></i></a> </li>
+                </ul>
+            </li>
+        </ul> 
+    </footer>
+
+    <script src="scritp.js"></script>
+</body>
+</html>

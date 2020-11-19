@@ -1,0 +1,125 @@
+.main-store{
+    grid-row: 2 / 3;
+    color:#222;
+    margin-top: 50px;
+    @include laptop{
+        margin-top: 130px;
+        
+    }
+    .h1-store{
+        padding: 0 20px;
+        text-align: center;
+        @include laptop{
+            margin-bottom: 70px;
+            
+        }
+    }
+/*---- ---- ---- ---- Productos recomendados ---- ---- ---- ----*/
+.prod-div{background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);}
+    .categorias{
+        padding: 0 20px;
+       
+        position: relative;
+        background-color: #F0EEF0;
+        display: grid;
+        grid-template-rows: 100px 340px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) ;
+        grid-auto-rows:340px ;
+        column-gap: 15px;
+        row-gap: 15px;
+        @include laptop{
+            margin-top:100px;
+            column-gap: 30px;
+            row-gap: 30px;
+
+        }
+        @include desktop{
+            padding: 0  10% 100px 10%;
+
+        }
+
+        &__h2{
+            padding-top: 30px;
+            text-transform: uppercase;
+            text-align: center;
+            grid-column: 1/-1;
+        }
+
+
+        .prod{
+            cursor: pointer;
+            display: grid;
+            grid-template-rows: 70% 30%;
+            background-color: #FFFFFF;
+            box-shadow:1px 1px 7px 0px rgba(50, 50, 50, 0.6);
+            transition: transform .2s ,  box-shadow .2s;
+            
+            
+
+            &__descrip{
+                grid-row: 2/3;
+                position: relative;
+                margin: 0 10px;
+                background-color: #FFFFFF;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
+
+                &::before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    height: 2px;
+                    width: 100%;
+                    
+                    background-color: rgba(50, 50, 50, 0.096);
+                }
+
+
+
+            }
+            .prod__img {
+                grid-row: 1/2;
+                display:block;
+                height: 230px;
+                margin: auto;
+                
+            }
+            &__h3{
+                margin: 0;  
+                margin-bottom: 5px;
+               
+               }
+            &__p{
+                margin: 0;
+            }
+               &__span{
+                   margin: 0 0 0 auto;
+                   color: green;
+
+                &::before{
+                    content: "$ ";
+                }
+            }
+
+                
+
+        }
+        .prod:hover{
+            transform: scale(1.03);
+            box-shadow:2px 2px 15px 0px rgba(50, 50, 50, 0.5);
+
+
+        }
+
+    }
+    .categoria-2{
+        margin-top:4px ;
+    }
+
+
+}
+
+

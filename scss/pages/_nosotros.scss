@@ -1,0 +1,45 @@
+
+
+.main-nosotros{ 
+    grid-row: 2 / 3;
+    color:#000;
+    margin-top: 30px;
+
+    @include laptop{
+        margin-top: 130px;
+        
+    }
+    
+
+    &__section{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+
+    } 
+    &__div{
+        display: flex;
+        flex-wrap: wrap;}
+
+
+    &__text{
+        text-align: left;
+        padding: 0px 20px;
+        line-height: 30px;
+        @include laptop{
+        padding: 0px 40px;
+        }
+    }
+    &__subtit {
+        text-align: center;
+    }
+    &__item {
+        width: 100%;
+
+
+        @include laptop{
+            width:50%;
+        }
+    }
+} 

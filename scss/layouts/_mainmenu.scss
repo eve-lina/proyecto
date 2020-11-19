@@ -1,0 +1,72 @@
+.main-nav{
+    width: 100%;
+    background-color: white;
+}
+.main-menu{
+    position: absolute;
+    width: 100%;
+    // background-color: rgba(34, 34, 34, 0.486);
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    background: #b1c200;
+    background: radial-gradient(circle, #b2c20000 0%, #b1c200 100%);
+
+    transform: translateX(-100%);
+    transition: transform .3s;
+
+    @include laptop{
+        transform: translate(0, 250px);
+        transition: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        
+    }
+    
+    .main-menu__item{
+        padding: .8em;
+        border-bottom: 1px solid whitesmoke;
+
+        @include laptop{
+            border: none;
+            padding: 1.4em .5em 1.4em .5em 
+
+
+        }
+
+        .main-menu__link{
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: whitesmoke;
+            color: black;
+            .icon-cart{
+                font-size: 20px;
+            }
+        }
+
+    }
+    /*--------clase del item carrito, se oculta en @mobile y muestra a partir de @laptop-----*/
+    
+    .ocult{
+        display: none;
+        @include laptop {
+            display: initial;
+        }
+    }
+
+
+}
+.main-menu__item:hover{
+    @include laptop{
+        font-weight:bold;
+    }
+}
+/*----- ----- clase para agregar con Js para animar menú ---- ------*/
+.menu__show{
+    transform: translateX(0);
+    transition: transform .3s;
+}

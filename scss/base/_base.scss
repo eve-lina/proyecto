@@ -1,0 +1,13 @@
+.body{
+    // color: whitesmoke;
+    min-height: 100vh;
+    
+    display: grid;
+    grid-template-rows:350px 1fr auto ;
+    font-family: 'montserrat',sans-serif;
+
+    @include laptop {
+        grid-template-rows: 300px 1fr 250px;   
+    }
+}
+
